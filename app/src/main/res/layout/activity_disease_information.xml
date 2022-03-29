@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Others.DiseaseInformation">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/crop_name"
+                android:layout_margin="10dp"
+                android:text="Crop Name"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/summary_infor"
+                android:text="Cercospora zeae-maydis overwinters in corn debris,
+                 so production practices such as tillage and crop rotation that
+                  reduce the amount corn residue on the surface will decrease
+                   the amount of primary inoculum."
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/main_image"
+                />
+
+            <TextView
+                android:id="@+id/more_infor"
+                android:text="Cercospora zeae-maydis overwinters in corn debris,
+                 so production practices such as tillage and crop rotation that
+                  reduce the amount corn residue on the surface will decrease
+                   the amount of primary inoculum."
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

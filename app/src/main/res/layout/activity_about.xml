@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Others.About">
+
+
+    <TextView
+        android:text="This application helps you to detect diseases on your farm or garden in order for you to have a healthy produce."
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Features"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:text="You can check the healthy status of your plant just by taking a clear image."
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_margin="10dp"
+        android:text="You can get a very accurate analysis in the category section where you specify what actual plant you want to analyze."
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_margin="10dp"
+        android:text="If you have an internet connection you can find information on farming and gardening vegetables in the veg infor section of the application."
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_margin="10dp"
+        android:text="You can watch a video on the type of disease you have found in your analysis."
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Others.CategoryDiseaseMenu">
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+
+        android:id="@+id/search_bar"
+        app:mt_speechMode="true"
+        app:mt_hint="Custom Hit"
+        android:theme="@style/AppTheme"
+        app:mt_maxSuggestionsCount="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.mancj.materialsearchbar.MaterialSearchBar>
+
+
+    <ListView
+
+        android:id="@+id/mListView"
+        android:layout_below="@id/search_bar"
+        android:textAlignment="center"
+        android:background="@drawable/btn_rounded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</RelativeLayout>

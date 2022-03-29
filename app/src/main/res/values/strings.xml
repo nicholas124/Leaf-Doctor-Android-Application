@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Leaf Doctor</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="toggle_turn_on">NN:On</string>
+    <string name="toggle_turn_off">NN:Off</string>
+    <string name="tflite">tflite</string>
+    <string name="gpu">GPU</string>
+    <string name="cpu">CPU</string>
+    <string name="modelLabel">Model</string>
+    <string name="deviceLabel">Device</string>
+    <string name="mobilenetV1Float">skin_cancer_v1</string>;;
+    <string name="buttonSelectPhoto">Select Photo</string>
+    <string name="buttonTakePhoto">Start Camera</string>
+    <string name="buttonDiagnose">Detect</string>
+    <string name="defaultImage">Default image set now...</string>
+    <string name="descriptionImage">View for displaying image</string>
+    <string name="description_app_setting">Testing</string>
+    <string name="label_app_settings">Testing</string>
+</resources>

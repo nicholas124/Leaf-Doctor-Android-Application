@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light"
+    android:orientation="vertical"
+    tools:context=".kotlin.SelectImage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/btn_rounded"
+        app:theme="@style/AppTheme"
+        app:popupTheme="@style/AppTheme"
+        android:elevation="4dp"
+        app:title="Green Doc">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="25sp"
+                android:textColor="@android:color/white"
+                android:text="Green Doc" />
+
+            <ImageButton
+                android:id="@+id/help_btn"
+                android:src="@drawable/ic_help_black_38"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_rounded"
+                />
+
+        </RelativeLayout>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/detection_layout_result"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/defaultImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="32dp"
+                android:padding="5dp"
+                android:id="@+id/mResultTextView"
+                android:textColor="@android:color/holo_red_dark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="32dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:padding="5dp"
+                android:id="@+id/mResultConfigence"
+                android:textColor="@android:color/holo_red_dark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="32dp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:padding="5dp"
+                    android:id="@+id/mPhotoImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/descriptionImage"
+                    app:srcCompat="@android:color/darker_gray"
+                    app:layout_constraintVertical_chainStyle="packed"
+                    android:layout_marginBottom="8dp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/mCameraButton"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:background="@drawable/btn_rounded"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buttonTakePhoto"
+                    android:layout_marginRight="50dp"
+                    />
+
+                <Button
+                    android:layout_toRightOf="@id/mCameraButton"
+                    android:gravity="center"
+                    android:layout_below="@+id/mCameraButton"
+                    android:text="@string/buttonDiagnose"
+                    android:background="@drawable/btn_rounded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mDetectButton"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>
